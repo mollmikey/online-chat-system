@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import request from 'superagent'
-import { PagedPosts, Post } from '../../models/Post'
+import { PagedPosts, Post } from '../../models/Post.ts'
 import { API_HOST, USERNAME, PASSWORD } from '../env.ts'
 
 export function useReplies(id: number, beforeId?: number) {
@@ -48,7 +48,6 @@ export function usePostsBy(author: string) {
     queryFn: async () => {
       const res = await request
         .get(`${API_HOST}/api/v1/posts/by/${author}`)
-        .query(qs)
         .auth(USERNAME, PASSWORD, { type: 'basic' })
 
       return res.body as PagedPosts

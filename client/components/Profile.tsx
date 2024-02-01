@@ -22,7 +22,7 @@ export default function Profile({ username }: Props) {
     <>
       <img
         className="profile-data__pfp"
-        src={`${API_HOST}/users/${username}/avatar`}
+        src={`${API_HOST}/api/v1/users/${username}/avatar`}
         alt={`portrait of ${username}`}
       />
       <h4>

@@ -13,8 +13,7 @@ export function TimeStamp({ now, value }: Props) {
   const rel = new Intl.RelativeTimeFormat('en-nz', { style: 'short' })
   const abs = new Intl.DateTimeFormat('en-nz', { dateStyle: 'short' })
 
-  const nowMs = Number(now) + value.getTimezoneOffset() * 60000
-  const diff = +value - nowMs
+  const diff = Number(value) - Number(now)
 
   let ts: string
   // if it's less than a minute, seconds
