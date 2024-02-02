@@ -22,6 +22,10 @@ You're going to use the existing API to complete some of our app's features
 
 - [ ] Clone this repo and `cd` into the new directory
 
+- [ ] Have a look around the code
+
+  Some things are in a different place than you are used to, read [Folder layout](./doc/Folders.md) for an explanation
+
 - [ ] Create a `.env` file in your root with your `VITE_API_HOST`
 
   We're going to develop against the live API so your `.env` file should look like this
