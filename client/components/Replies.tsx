@@ -8,7 +8,7 @@ interface Props {
 
 export default function Replies({ id }: Props) {
   const posts = useReplies(id)
-  if (posts.isLoading) {
+  if (posts.isPending) {
     return <LoadingIndicator />
   }
 

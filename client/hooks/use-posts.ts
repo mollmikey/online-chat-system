@@ -35,7 +35,7 @@ export function usePost(id: number) {
 export function usePosts() {
   // TODO: replace this with a real implementation
   return {
-    isLoading: true,
+    isPending: true,
     isError: false,
     data: null as null | { items: [] },
     error: null,

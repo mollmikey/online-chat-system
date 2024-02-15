@@ -11,7 +11,7 @@ export default function PostPage() {
   const id = Number(useParams().id)
   const post = usePost(id)
 
-  if (post.isLoading) {
+  if (post.isPending) {
     return <LoadingIndicator />
   }
 

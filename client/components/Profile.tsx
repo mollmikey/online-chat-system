@@ -10,7 +10,7 @@ interface Props {
 export default function Profile({ username }: Props) {
   const user = useUserData(username)
 
-  if (user.isLoading) {
+  if (user.isPending) {
     return <LoadingIndicator />
   }
 

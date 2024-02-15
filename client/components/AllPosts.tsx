@@ -6,7 +6,7 @@ import PostListView from './MaxiPostListView.tsx'
 export default function AllPosts() {
   const posts = usePosts()
 
-  if (posts.isLoading) {
+  if (posts.isPending) {
     return <LoadingIndicator />
   }
 

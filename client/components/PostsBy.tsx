@@ -10,7 +10,7 @@ interface Props {
 
 export default function PostsBy({ username }: Props) {
   const posts = usePostsBy(username)
-  if (posts.isLoading) {
+  if (posts.isPending) {
     return <LoadingIndicator />
   }
 
