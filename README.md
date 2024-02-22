@@ -117,9 +117,9 @@ You should see a list of posts presented as a JSON document
   The form at the top of the page should work now (if you're logged in), so write a post and see it
   appear in the timeline.
 
-- [ ] Run the tests for authoring posts
+- [ ] Run the tests for writing posts
 
-  run `npm test -- AuthoringANewPost` to just see the relevant posts
+  run `npm test -- WritingANewPost` to just see the relevant posts
 
 ## Stretch: edit your user profile
 
@@ -135,11 +135,11 @@ If you visit your own profile page at `/u/$USER_NAME` (or by clicking on your us
 
   The form can use the `useUpdateUser` function in `./client/hooks/use-updateuser.ts`
 
-  use the [AuthorPostForm](./client/components/AuthorPostForm.tsx) as a reference
+  use the [WritePostForm](./client/components/WritePostForm.tsx) as a reference
 
 - [ ] Write tests for your new form
 
-  Use the [AuthoringANewPost](./client/pages/AuthoringANewPost.test.tsx) tests as an example
+  Use the [WritingANewPost](./client/pages/WritingANewPost.test.tsx) tests as an example
 
 ---
 
