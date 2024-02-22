@@ -20,6 +20,8 @@ You're going to use the existing API to complete some of our app's features
 
 ![auth screenshot](./doc/auth-screenshot-thunderclient.png)
 
+You should see a list of posts presented as a JSON document
+
 - [ ] Clone this repo and `cd` into the new directory
 
 - [ ] Have a look around the code
@@ -46,8 +48,6 @@ You're going to use the existing API to complete some of our app's features
 - [ ] Visit the home-page
 
   Vite will log out a url similar to [[http://localhost:5173]]
-
-You should see a list of posts presented as a JSON document
 
 ## 1. Write the hook to fetch posts for the timeline
 
