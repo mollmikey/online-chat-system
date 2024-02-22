@@ -135,7 +135,7 @@ If you visit your own profile page at `/u/$USER_NAME` (or by clicking on your us
 
   The form can use the `useUpdateUser` function in `./client/hooks/use-updateuser.ts`
 
-  use the [WritePostForm](./client/components/WritePostForm.tsx) as a reference
+  Use the [WritePostForm](./client/components/WritePostForm.tsx) as a reference
 
 - [ ] Write tests for your new form
 
