@@ -55,7 +55,7 @@ describe('The post page', () => {
     const screen = renderRoute('/p/123')
     const profilePic = await screen.findByAltText('portrait of gerard')
     expect(profilePic).toBeVisible()
-    const selfLink = await screen.findByRole('link', { name: '11 hr ago' })
+    const selfLink = await screen.findByRole('link', { name: '24 hr ago' })
     expect(selfLink).toBeVisible()
     expect(await screen.findByText('not much rn')).toBeVisible()
     expect(scope.isDone()).toBe(true)
