@@ -60,13 +60,26 @@ export function usePostsBy(author: string) {
 
 export function useCreatePost() {
   // TODO: complete this function to create new posts
-  return {
-    mutate: (_: { text: string }) => {},
-    isPending: true,
-    isError: false,
-    error: null,
+    const queryClient = useQueryClient()
+    return useMutation({
+      mutationFn: async (post: {text: string}) => {
+        const res = await request
+          .post(`${API_HOST}/api/v1/posts`)
+          .send(post)
+          .auth(USERNAME, PASSWORD, { type: 'basic' })
+        return res.body as Post
+      },
+      onSuccess: async () => {
+        queryClient.invalidateQueries({ queryKey: ['posts'] })
+      },
+    })
   }
-}
+
+    // mutate: (_: { text: string }) => {},
+    // isPending: true,
+    // isError: false,
+    // error: null,
+
 
 export function useReplyTo() {
   const qc = useQueryClient()
